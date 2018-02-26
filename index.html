@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Crystal Collector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1>The Crystal Collector</h1>
+        <h3>Click on the crystals to determine their value. Add the crystals together to get the total score randomly assigned by the computer.</h3>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <h3>You are trying to obtain this score:</h3>
+                <div id="compScore">
+                </div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="center">
+            <div class="row">
+                <div id="crystal1" class="col-md-3">
+                    <div class="crystal1"><img src="assets/crystal1.png" alt="First crystal" id="crystal1"></div>
+                </div>
+                <div id="crystal2" class="col-md-3">
+                    <div class="crystal2"><img src="assets/crystal2.png" alt="Second crystal" id="crystal2"></div>
+                </div>
+                <div id="crystal3" class="col-md-3">
+                    <div class="crystal3"><img src="assets/crystal3.png" alt="Second crystal" id="crystal3"></div>
+                </div>
+                <div id="crystal4" class="col-md-3">
+                    <div class="crystal4"><img src="assets/crystal4.png" alt="Second crystal" id="crystal4"></div>
+            </div>
+        </div>    
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4">
+                <h3>Your score:</h3>
+                    <div id="userScore"></div>
+            </div>
+            <div class="col-md-4"></div>
+        </div>
+    </div>
+    <div class="contatiner">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <h3>Wins:</h3>
+                        <div id="wins">
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <h3>Loses:</h3>
+                        <div id="loses">
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+    </div>
+</body>
+</html>
