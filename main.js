@@ -71,7 +71,7 @@ $(document).ready(function() {
 
         else if (userScore > compScore) {
             loses++;
-            $("#loses").text(loses)
+            $("#losses").text(loses)
         }
     }
 
