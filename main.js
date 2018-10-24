@@ -13,31 +13,23 @@ $(document).ready(function() {
         crystal3 = randomNum(1, 12);
         crystal4 = randomNum(1, 12);
         compScore = randomNum(19, 120);
-        var crystals = document.getElementsByClassName("col-md-3 crystals");
+        var crystals = document.getElementsByClassName(".col-md-3 crystals");
         userScore = 0;
         updateScores();
         $("#compScore").text(compScore)
         console.log(compScore);
         $("#userScore").text(userScore);
         
-        for (var i = 0; i > crystals.length; i++) {
-            //crystals[i].attr("value", randomNum(1, 12));
-            console.log("test");
-            console.log(crystals[i]);
-        }
     }
 
     $("#crystal1").attr("value", crystal1);
     $("#crystal2").attr("value", crystal2);
     $("#crystal3").attr("value", crystal3);
     $("#crystal4").attr("value", crystal4);
-    //$("#compScore").append(compScore);
 
     function randomNum(min, max) {
         return Math.floor(Math.random() * (max - min + 1) ) + min;
     }
-
-
 
     $("#crystal1").click(function() {
         $("#userScore").text(userScore += crystal1);
@@ -87,5 +79,3 @@ $(document).ready(function() {
         }
     }
 });
-
-// Finish the game when wins/loses increments
