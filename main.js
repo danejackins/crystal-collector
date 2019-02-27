@@ -3,8 +3,6 @@ $(document).ready(function() {
     var userScore = 0;
     var wins = 0;
     var loses = 0;
-
-    var crystal1, crystal2, crystal3, crystal4, compScore;
     reset();
 
     function reset() {
@@ -13,7 +11,6 @@ $(document).ready(function() {
         crystal3 = randomNum(1, 12);
         crystal4 = randomNum(1, 12);
         compScore = randomNum(19, 120);
-        var crystals = document.getElementsByClassName(".col-md-3 crystals");
         userScore = 0;
         updateScores();
         $("#compScore").text(compScore)
@@ -69,13 +66,13 @@ $(document).ready(function() {
 
     function checkGameState() {
         if (userScore === compScore) {
-            alert("You win!")
-            reset();
+            setTimeout(function() { alert("You win!"); }, 100);
+            setTimeout(function() { reset(); }, 110);
         }
 
         else if (userScore > compScore) {
-            alert("You lose!")
-            reset();
+            setTimeout(function() { alert("You lose!"); }, 100);
+            setTimeout(function() {reset(); }, 110);
         }
     }
 });
