@@ -72,7 +72,7 @@ $(document).ready(function() {
 
         else if (userScore > compScore) {
             setTimeout(function() { alert("You lose!"); }, 100);
-            setTimeout(function() {reset(); }, 110);
+            setTimeout(function() { reset(); }, 110);
         }
     }
 });
